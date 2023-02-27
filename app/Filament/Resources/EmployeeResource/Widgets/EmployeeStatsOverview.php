@@ -13,10 +13,11 @@ class EmployeeStatsOverview extends BaseWidget
     {
         $ph = Country::where('country_code', 'PH')->withCount('employees')->first();
         $us = Country::where('country_code', 'US')->withCount('employees')->first();
+
         return [
             Card::make('All Employees', Employee::all()->count()),
-            Card::make($ph->name . ' Employees', $ph->employees_count),
-            Card::make($us->name . ' Employees', $us->employees_count),
+            Card::make('PH Employees', $ph ? $ph->employees_count : 0),
+            Card::make('US Employees', $us ? $us->employees_count : 0),
         ];
     }
 }
