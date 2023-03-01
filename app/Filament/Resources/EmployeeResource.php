@@ -64,7 +64,7 @@ class EmployeeResource extends Resource
                             })
                             ->required()
                             ->reactive(),
-                        Select::make('department_id',)
+                        Select::make('department_id')
                             ->relationship('department', 'name')->required(),
                         TextInput::make('first_name')->required()->maxLength(255),
                         TextInput::make('last_name')->required()->maxLength(255),

@@ -56,7 +56,7 @@ class EmployeesRelationManager extends RelationManager
                     })
                     ->required()
                     ->reactive(),
-                Select::make('department_id',)
+                Select::make('department_id')
                     ->relationship('department', 'name')->required(),
                 TextInput::make('first_name')->required()->maxLength(255),
                 TextInput::make('last_name')->required()->maxLength(255),
