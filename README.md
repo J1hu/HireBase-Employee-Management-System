@@ -4,12 +4,11 @@ Employee Management System using Laravel Breeze & Laravel Filament
 ## Installation
 
 1. Install the project with git
-
 ```
 git clone https://github.com/J1hu/HireBase-Employee-Management-System.git
 ```   
-2. Install Project Dependencies from Composer
 
+2. Install Project Dependencies from Composer
 ```
 composer install 
 ```
@@ -19,10 +18,11 @@ composer install
 npm install 
 ```
 
-4. Rename .env.example to .env
+4. Rename `.env.example` to `.env`
 
+5. Setup your database via `.env`
 
-5. Generate encryption key
+6. Generate encryption key
 ```
 php artisan key:generate
 ```
