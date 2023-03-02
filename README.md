@@ -6,7 +6,7 @@ Employee Management System using Laravel Breeze & Laravel Filament
 1. Install the project with git
 
 ```
-  git clone https://github.com/J1hu/HireBase-Employee-Management-System.git
+git clone https://github.com/J1hu/HireBase-Employee-Management-System.git
 ```   
 2. Install Project Dependencies from Composer
 
