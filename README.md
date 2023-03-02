@@ -27,6 +27,15 @@ npm install
 php artisan key:generate
 ```
 
+## Create filament user
+
+1. On the terminal repo, use the command
+```
+php artisan make:filament-user
+```
+
+2. After creating a user, go to `/admin` and login the credentials
+
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
